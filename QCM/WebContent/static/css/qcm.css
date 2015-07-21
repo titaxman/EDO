@@ -1,0 +1,404 @@
+/**
+ * Styles generiques
+ */
+
+* {
+	padding:0;
+	margin:0;
+	font-family:'Trebuchet MS';
+}
+
+body {
+	background:#d5d5d5 url('../img/background.png') repeat-x;
+	font-size:12pt;
+}
+
+h1 {
+	font-size:15pt;
+	padding:10px 50px 10px 10px;
+	float:left;
+	color:white;
+}
+
+#container {
+	clear:both;
+	padding:15px;
+	background:white;
+	width:1000px;
+	margin:0 auto;
+}
+
+/**
+ * Bloc de droite
+ */
+
+#advice {
+	width:250px;
+	float:right;
+}
+
+#advice h3 {
+	font-size:15pt;
+	color:#57607e;
+	padding-bottom:10px;
+}
+
+#advice li {
+	display:block;
+	background:#dee6ef;
+	padding:10px;
+	margin-bottom:15px;
+	-moz-border-radius:10px;
+}
+
+#advice label {
+	display:block;
+	clear:left;	
+}
+
+#advice input[type=text] {
+	display:block;
+	padding:5px;
+	border:1px solid gray;
+	-moz-border-radius:5px;
+	font-size:12pt;
+	display:block;
+	clear:both;
+}
+
+.date-pick {
+	float:left;
+}
+
+/**
+ * Bloc du centre
+ */
+
+#content {
+	margin-right:265px;
+	padding:10px;
+	padding-top:0;
+}
+
+#content h2 {
+	font-size:20pt;
+	padding-top:10px;
+	color:black;
+	border-bottom:1px solid black;
+}
+
+#content input[type=radio] {
+	margin-right:10px;
+	margin-bottom:10px;
+}
+
+#content input[type=text], #content input[type=password], #content textarea {
+	display:block;
+	padding:5px;
+	border:1px solid gray;
+	-moz-border-radius:5px;
+	font-size:12pt;
+	width:50%;
+}
+
+#content textarea {
+	height:100px;
+}
+
+.inputError {
+	border:1px solid #8b4d59;
+	background:#fae1e6;
+}
+
+#content input[type=submit], #content input[type=button], a#addTag, a#pagination, a.button {
+	padding:5px 20px;
+	background:#a24571;
+	color:white;
+	text-align:center;
+	font-weight:bold;	
+	-moz-border-radius:5px;
+	border:none;	
+	font-size:12pt;
+	cursor:pointer;
+	margin-right:10px;
+	text-decoration:none;
+}
+
+#content input[type=submit]:hover, #content input[type=button]:hover, a.button:hover {
+	background:#c34e80;	
+}
+
+a.button {
+	float:right;
+}
+
+/**
+ * Nuage de tags
+ */
+
+#tagsCloud {
+	list-style:none;
+	min-height:100px;
+}
+
+#tagsCloud li {
+	padding:10px 10px 10px 0;
+	display:block;
+	float:left;
+	font-weight:bold;
+}
+
+.newline {
+	clear:left;
+	padding-top:10px;	
+}
+
+.tags {
+	padding:5px 5px 10px 0;
+}
+
+.tag {
+	font-weight:normal;
+	background:#e0eaf1;
+	border:1px solid #3e6d8e;
+	color:#3e6d8e;
+	padding:2px 5px 2px 5px;
+	cursor:pointer;
+	display:block;
+	float:left;
+	white-space:nowrap;
+	font-size:10pt;
+	font-family:Arial;
+	margin-right:5px;
+}
+
+.tag a {
+	text-decoration:none;
+	color:black;
+	padding:0px 3px;
+	-moz-border-radius:5px;
+	background:#a9d24f;
+}
+
+.tag:hover {
+	background:#3e6d8e;
+	color:#e0eaf1;
+}
+
+.tag:hover a {
+	background:#e0eaf1;
+	color:#3e6d8e;
+}
+
+a#addTag {
+	display:block;
+	margin-left:120px;
+}
+
+/**
+ * Affichage d'un questionnaire
+ */
+
+.questions {
+	padding:10px;
+	margin-top:10px;
+	margin-bottom:10px;
+	list-style:none;
+	border-top:1px dotted gray;
+}
+
+.questions h3, .questions h4 {
+	color:#0077ce;
+	margin:5px 0;
+}
+
+.questions h4 {
+	color:gray;
+}
+
+.answers {
+	padding:10px;
+	margin-top:10px;	
+	margin-left:30px;
+	border-left:1px solid gray;
+	
+}
+
+.answers ul {
+	list-style:none;
+}
+
+.answers input[type=checkbox] {
+	float:left;
+	margin:10px 10px 0 10px;
+}
+
+/**
+ * Menu de navigation
+ */
+
+#menu a img {
+	border:none;
+	margin-bottom:-2px;
+}
+
+#menu a {
+	color:white;
+	text-decoration:none;
+	text-align:center;
+}
+
+#menu li a {
+	padding:12px;
+	color:white;
+	display:block;
+	text-decoration:none;
+	min-width:50px;
+}
+
+#menu li a:hover {
+	background:url('../img/highlight.png') center no-repeat;
+}
+
+#navigation li {
+	display:block;
+	float:left;
+}
+
+#menu .separator {
+	background:url('../img/separator.png') no-repeat;
+	width:1px;
+	height:40px;
+}
+
+#menu #userHeader li {
+	display:block;
+	float:right;
+}
+
+/**
+ * Pied de page
+ */
+
+#footer {
+	clear:both;
+	font-size:10pt;
+	text-align:center;
+	color:gray;
+	padding-top:10px;
+}
+
+/**
+ * Listes (utilisateurs, questionnaires)
+ */
+
+.list-box {
+	border-bottom:1px dotted gray;
+	padding:11px;
+	padding-bottom:20px;
+}
+
+.list-box h4 {
+	font-size:17pt;
+	font-weight:bold;	
+}
+
+.list-box h4 a {
+	text-decoration:none;
+	color:#0077ce;
+	display:block;
+}
+
+.list-box h4 a:hover {
+	text-decoration:underline;	
+}
+
+.list-stat {
+	float:right;
+	font-family:Arial;
+	color:white;
+	padding:5px;
+	text-align:center;
+	min-width:50px;
+	margin-top:5px;
+}
+
+.list-count {
+	display:block;
+	font-size:18pt;
+}
+
+/**
+ * Profil de l'utilisateur
+ */
+
+
+.user-editbox{
+    position:absolute;
+    top:10%;
+    left:30%;
+    padding: 10px;
+    border-left: 1px solid black;
+    height:80px;
+}
+
+/**
+.user-editbox{
+    position:absolute;
+    top:59px;
+    left:420px;
+    padding: 10px;
+    border-left: 1px solid black;
+    height:80px;
+}
+*/
+
+
+.user-editbox input{
+	margin:4px;	
+}
+
+.avatar {
+	height:100px;	
+}
+
+/**
+ * Couleurs rouge/vert
+ */
+
+.answered {
+	background:#75845C;
+}
+
+.unanswered {
+	background:#9A4444;
+}
+
+.correct {
+	color:#80c756;
+}
+
+.incorrect {
+	color:#9A4444;
+}
+
+/**
+ * Composant datepicker (jQuery)
+ */
+
+a.dp-choose-date {
+	float: left;
+	width: 16px;
+	height: 16px;
+	padding: 0;
+	margin: 5px 3px 0;
+	display: block;
+	text-indent: -2000px;
+	overflow: hidden;
+	background: url('/QCM/static/img/calendar.png') no-repeat; 
+}
+
+a.dp-choose-date.dp-disabled {
+	background-position: 0 -20px;
+	cursor: default;
+}
